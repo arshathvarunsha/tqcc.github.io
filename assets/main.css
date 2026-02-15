@@ -42,7 +42,7 @@ a.current{color: #52739e;}
 a.current:hover{color: #e82945;}
 a:hover{color: #b2132e;}
 a:active{color: #e82945;}
-h1,h2,h3,h4{clear:left; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
+h1,h2,h3,h4{clear:center; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
 h1{font-size:2.67em;}
 h2{font-size:2.00em;}
 h3{font-size:1.67em;}
@@ -137,5 +137,38 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
+}
+/* Next talk section */
+
+.next-talk{
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 12px 0 10px 0;
+}
+
+.speaker-photo img{
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.talk-details p{
+  margin: 6px 0;
+}
+
+/* Mobile-friendly */
+@media (max-width: 700px){
+  .next-talk{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .speaker-photo img{
+    width: 200px;
+    height: 240px;
+  }
 }
 
